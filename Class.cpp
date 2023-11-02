@@ -5,7 +5,6 @@
 #include "account.h"
 #include "accountManager.h"
 
-//Doesn't return the balance value at the end of the while loop to the list I think, sets it back to zero when run through the program again.
 
 void useAccount(std::shared_ptr<account> myAccount)
 {
@@ -81,7 +80,7 @@ int main()
             if (createAccount == "yes")
             {
                 accountNumber = manager.createAccount();
-                std::cout << accountNumber << "\n";
+                std::cout << "Your account number is " << accountNumber << "\n";
                 bool checkAccount = manager.checkAccount(accountNumber);
                 if (checkAccount)
                 {
