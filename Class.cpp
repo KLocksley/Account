@@ -76,7 +76,7 @@ int main()
         std::cin >> ownAccount;
         if (ownAccount == "no")
         {
-            std::cout << "Do you want to create an account? \n";
+            std::cout << "Do you want to create an account? \n"; 
             std::cin >> createAccount;
             if (createAccount == "yes")
             {
